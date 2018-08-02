@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+ 
+\documentclass{resume} % Use the custom resume.cls style 
+\usepackage[left=0.6in, top=0.65in, right=0.6in, bottom=0.2in]{geometry} % Document margins
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\newenvironment{myitemize}
+{ \begin{itemize}[leftmargin=0.2em,label={}]
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}     }
+{ \end{itemize}                  } 
+
+
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{enumitem,kantlipsum}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Jianfeng Chen} % Your name 
+% \address{\url{http://jianfeng.us}}
+% \address{3111-A Walnut Creek Parkway, Raleigh, NC, 27606}
+\address{(919)-457-2034 \\ \url{http://jianfeng.us}   \\ \href{mailto:jchen37@ncsu.edu}{jchen37@ncsu.edu}
+}
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Objectives}
+% \textit{\textbf{Objective: Seeking SDE or Machine Learning internship in Summer'18 and full-time positions starting May'19.
+% }}
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\vspace{2em}
+
+\begin{rSection}{Education}
+
+{\bf PhD in Computer Science} \hfill {Aug 2014 - May 2019 (expected)}\\ 
+North Carolina State University, GPA: 4.0/4.0  \\
+Coursework: Data-to-Knowledge $|$ DevOps $|$ Advanced AI $|$ Algorithm Analysis $|$ Data Mining $|$ Automated SE
+
+{\bf BS in Computer Science} \hfill {Sep 2010 - May 2014}\\ 
+Shandong University, China, GPA: 91.1/100  \\
+Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numerical Analysis $|$ Image Processing
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills and Interests}
+\begin{myitemize}\setlength\itemsep{0.1em}
+    \item Proficient in \textbf{language}: Python, Java; familiar with JavaScript, C\texttt{++}, Matlab and SQL;
+    \item Proficient in \textbf{data analysis} tools: Scikit-learn, SciPy, Pandas, jMetal, Gephi;
+    \item Familiar with \textbf{DevOps} tools: Jenkins, Ansible, Travis-CI, AWS Elasticsearch, S3, Docker, Redis.
+    % \item Interested in machine learning/data related positions as well as backend development and (automated) testing.
+\end{myitemize}
+
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+% Languages & \textbf{\textit{Proficient:}} Python $|$ Java $|$ \LaTeX; \textbf{\textit{Familiar with:}} JavaScript $|$ MatLab $|$ SQL $|$ C\texttt{++}\\
+% Data Analytics & Scikit-learn, SciPy, Pandas, jMetal, Gephi, MPI\\
+% DevOps Tools & Git, Jenkins, Ansible, Travis-CI, AWS Elasticsearch, S3, Docker, Redis \\
+% \end{tabular}   
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%	WORKING
+%-------------------------------------------------------------------------------
+
+\begin{rSection}{Selected Projects}
+
+\begin{rSubsection}{Automated Configurations for Cloud-based Workflows}{May 2017 - Aug 2017}
+{North Carolina State University}{}
+\item Presented a novel stochastic method for rapidly configuration cloud-based workflows
+\item Automatically deployed the workflow with more than 500 sub-tasks to AWS platform. Save more than 30\% economy cost within specific deadline requirement, compared to default greedy deployment policy in AWS.
+% \vspace{0.5em}~\\
+% \textbf{\it Skills: Software Architecture Analysis, Automated Configurations, Constraint Analysis}
+\end{rSubsection}
+
+\begin{rSubsection}{LACE Data Privatization Tools and its Application}{Aug 2016 - Nov 2016}{NSA funded project in \href{http://ai4se.net/index}{\textit{RAISE}} Lab}{}
+
+\item Distributed a data anonymization  package in Python (see \url{http://tiny.cc/pydp}); tested package via Travis-CI.
+\item Applied my package to education and medical data sets. Evaluate data set utility through supervised learning.
+% \vspace{0.5em}~\\
+% \textbf{\it Skills: Python, DevOps(Continuous Deployment), Data Deduplication, Data Cleaning}
+\end{rSubsection}
+
+
+\begin{rSubsection}{Fast Principal-component-analysis (F-PCA) Method for Flight Status Log} {May 2016 - Aug 2016}{Google Summer of Code program 2016}{}
+\item Accepted by Google \href{https://developers.google.com/open-source/gsoc/}{\texttt{GSoC2016}}  program among 18,981 applicants \textbf{(accept rate: 6\%)}.
+% \item Basing on the \href{http://javapathfinder.sourceforge.net/}{\texttt{JPF}} platform, found the most promising sub-state space in the NASA \href{https://goo.gl/seVsNo}{\texttt{Brahms}} models.
+\item Hierarchical clustering a dataset(flight status log) with more than 20M entries top-down and bottom-up. Create a PCA-like dimension reduction algorithm and speed it up by spark. Compared my own algorithm with PCA.
+% \vspace{0.5em}~\\
+% \textbf{\it Skills: Spark, Multi-objectives Optimization, Dimensionality Reduction, HAC}
+\end{rSubsection}  
+
+%-------------------------------------------------- 
+% \begin{rSubsection}{(Research Assistant) Sampling vs. Searching in Search-based SE}{Dec 2014 - Present}
+% {North Carolina State University}{}
+% \item Created a sampling technique to solve the software product line problem. Deployed the algorithm into platform LSF by MPI; implemented a job schedule engine. Reduced the experiment time from 2 months CPU hrs into 11.5 hrs.
+% \item Modeled the Linux Kernel modules in CNF sets. Created the decision tree surrogate model. By combining SAT solvers, found a way to configure large software systems 2000x faster. Published the results in TSE.
+% \vspace{0.5em}~\\
+% \textbf{\it Skills: MPI, SBSE, Software Architecture Analysis, Z3 Solver}
+% \end{rSubsection}
+
+
+
+% \end{rSection}
+
+
+
+%-------------------------------------------------------------------------------
+%	PROJECTS
+%-------------------------------------------------------------------------------
+
+% \begin{rSection}{Selected Projects}
+
+
+%------------------------------------------------
+
+\begin{rSubsection}{Building Movie Recommendation System}{Aug 2015 - Dec 2015}{``Netflix Prize'' completion extension}{} 
+\item Build a movies recommendation system by training from 100 million
+% \href{http://www.netflixprize.com/}{\texttt{Netflix ratings}} 
+Netflix ratings
+by Factorization Machine, SVM and ANN. Accelerated the learning process through high performance computing (HPC) server.
+\item Crawled cast, critic reviews from rotten tomatoes and classified the movies basing on Jaro-Winkler Distance. Reduced the RMSE by up to 9\% with the help of external information.
+% \vspace{0.5em}~\\
+% \textbf{\it Skills: Scikit-learn, HPC, MPI, libFM}
+\end{rSubsection}
+
+% %------------------------------------------------
+
+\begin{rSubsection}{Continuous Integration/Delivery Pipeline}{Aug 2015 - Dec 2015}{DevOps practice}{} 
+\item Basing on abstract syntax tree, created a test-suite generator to \textit{only} test the diff between two commits.
+\item Integrated Ansible scripts, Docker and Jenkins to build, test and deploy our        ``sunrise-calculator'' application.
+% \vspace{0.5em}~\\
+% \textbf{\it Skills: Continuous Deploy, Ansible, Jenkins, Dockers, Test suite prioritization}
+\end{rSubsection}
+
+\end{rSection} 
+
+%--------------------------------------------------------------------------------------
+%   Research Publications 
+%--------------------------------------------------------------------------------------
+\begin{rSection}{ Publications} 
+\setenumerate[1]{label=[\arabic*]}
+\begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+\item \underline{Chen, J.}, and Menzies, T. "RIOT: a Novel Stochastic Method for Rapidly Configuring Cloud-Based Workflows." \textit{IEEE International Conference on Cloud Computing 2018} (Accept rate: 15\%).
+\item \underline{Chen, J.}, Nair, V., Krishna, R., and Menzies, T. "Sampling as a Baseline Optimizer for Search-based Software Engineering" \textit{To appear. IEEE Transactions on Software Engineering (2018)}.
+\item \underline{Chen, J.}, Nair, V., and  Menzies, T. Beyond Evolutionary Algorithms for Search-based Software Engineering. \textit{Information and Software technology Volume 95, Mar 2018, p.281-294}.
+\end{enumerate}
+
+\end{rSection}
+
+\begin{flushright}
+{\scriptsize \textit{Updated: April 2018}}
+\end{flushright}
+
+\end{document}
