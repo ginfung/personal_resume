@@ -75,9 +75,9 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 
 \begin{rSection}{Skills and Interests}
 \begin{myitemize}\setlength\itemsep{0.1em}
-    \item Proficient in \textbf{language}: Python, Java; familiar with JavaScript, C\texttt{++}, Matlab and SQL;
-    \item Proficient in \textbf{data analysis} tools: Scikit-learn, SciPy, Pandas, jMetal, Gephi;
-    \item Familiar with \textbf{DevOps} tools: Jenkins, Ansible, Travis-CI, AWS Elasticsearch, S3, Docker, Redis.
+    \item \textbf{Language}: Python, C\texttt{++}, Java, JavaScript, Matlab and SQL;
+    \item \textbf{Data analysis tools}: Scikit-learn, SciPy, Pandas, jMetal, Gephi;
+    \item \textbf{DevOps tools}: Jenkins, Ansible, Travis-CI, AWS Elasticsearch, S3, Docker, Redis.
     % \item Interested in machine learning/data related positions as well as backend development and (automated) testing.
 \end{myitemize}
 
@@ -93,19 +93,26 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 %	WORKING
 %-------------------------------------------------------------------------------
 
-\begin{rSection}{Selected Projects}
+\begin{rSection}{Intern and Research Experience}
+\begin{rSubsection}{Cross-Stan: Embedding Bayesian Modeling in Python and C++ Programs}{May 2018- Aug 2018}
+{Internship at Facebook (Machine learning experience group)}{}
+\item Created the tool {\it CxStan} to embed Bayesian Modeling engine, Stan, into Python and C++ programs;
+\item Built a hierarchical framework to accelerate the  Monte Carlo Sampling for the Stan modeling;
+\item Integrated the tool into the buck build tool, making the Stan engine as a service;
+\item Applied the {\it CxStan} to some Facebook services' traffic policing.
+\end{rSubsection}
 
 \begin{rSubsection}{Automated Configurations for Cloud-based Workflows}{May 2017 - Aug 2017}
 {North Carolina State University}{}
-\item Presented a novel stochastic method for rapidly configuration cloud-based workflows
-\item Automatically deployed the workflow with more than 500 sub-tasks to AWS platform. Save more than 30\% economy cost within specific deadline requirement, compared to default greedy deployment policy in AWS.
+\item Presented a novel stochastic method for rapidly configuration cloud-based workflows;
+\item Automatically deployed the workflow with more than 500 sub-tasks to AWS platform. Save up to 30\% economy cost within specific deadline requirement, compared to default greedy deployment policy in AWS.
 % \vspace{0.5em}~\\
 % \textbf{\it Skills: Software Architecture Analysis, Automated Configurations, Constraint Analysis}
 \end{rSubsection}
 
 \begin{rSubsection}{LACE Data Privatization Tools and its Application}{Aug 2016 - Nov 2016}{NSA funded project in \href{http://ai4se.net/index}{\textit{RAISE}} Lab}{}
 
-\item Distributed a data anonymization  package in Python (see \url{http://tiny.cc/pydp}); tested package via Travis-CI.
+\item Distributed a data anonymization  package in Python (see \url{http://tiny.cc/pydp}); tested package via Travis-CI;
 \item Applied my package to education and medical data sets. Evaluate data set utility through supervised learning.
 % \vspace{0.5em}~\\
 % \textbf{\it Skills: Python, DevOps(Continuous Deployment), Data Deduplication, Data Cleaning}
@@ -113,7 +120,7 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 
 
 \begin{rSubsection}{Fast Principal-component-analysis (F-PCA) Method for Flight Status Log} {May 2016 - Aug 2016}{Google Summer of Code program 2016}{}
-\item Accepted by Google \href{https://developers.google.com/open-source/gsoc/}{\texttt{GSoC2016}}  program among 18,981 applicants \textbf{(accept rate: 6\%)}.
+\item Accepted by Google \href{https://developers.google.com/open-source/gsoc/}{\texttt{GSoC2016}}  program among 18,981 applicants \textbf{(accept rate: 6\%)};
 % \item Basing on the \href{http://javapathfinder.sourceforge.net/}{\texttt{JPF}} platform, found the most promising sub-state space in the NASA \href{https://goo.gl/seVsNo}{\texttt{Brahms}} models.
 \item Hierarchical clustering a dataset(flight status log) with more than 20M entries top-down and bottom-up. Create a PCA-like dimension reduction algorithm and speed it up by spark. Compared my own algorithm with PCA.
 % \vspace{0.5em}~\\
@@ -131,7 +138,7 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 
 
 
-% \end{rSection}
+\end{rSection}
 
 
 
@@ -139,29 +146,31 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 %	PROJECTS
 %-------------------------------------------------------------------------------
 
-% \begin{rSection}{Selected Projects}
+\begin{rSection}{Selected Coursework Projects}
 
 
 %------------------------------------------------
 
-\begin{rSubsection}{Building Movie Recommendation System}{Aug 2015 - Dec 2015}{``Netflix Prize'' completion extension}{} 
-\item Build a movies recommendation system by training from 100 million
+% \begin{rSubsection}{Building Movie Recommendation System}{Aug 2015 - Dec 2015}{``Netflix Prize'' completion extension}{} 
+\textbf{Building Movie Recommendation System:}~
+Built a movies recommendation system by training from 100 million
 % \href{http://www.netflixprize.com/}{\texttt{Netflix ratings}} 
 Netflix ratings
-by Factorization Machine, SVM and ANN. Accelerated the learning process through high performance computing (HPC) server.
-\item Crawled cast, critic reviews from rotten tomatoes and classified the movies basing on Jaro-Winkler Distance. Reduced the RMSE by up to 9\% with the help of external information.
+by Factorization Machine, SVM and ANN. Accelerated the learning process with HPC server.
+% \item Crawled cast, critic reviews from rotten tomatoes and classified the movies basing on Jaro-Winkler Distance. Reduced the RMSE by up to 9\% with the help of external information.
 % \vspace{0.5em}~\\
 % \textbf{\it Skills: Scikit-learn, HPC, MPI, libFM}
-\end{rSubsection}
+% \end{rSubsection}
 
 % %------------------------------------------------
 
-\begin{rSubsection}{Continuous Integration/Delivery Pipeline}{Aug 2015 - Dec 2015}{DevOps practice}{} 
-\item Basing on abstract syntax tree, created a test-suite generator to \textit{only} test the diff between two commits.
-\item Integrated Ansible scripts, Docker and Jenkins to build, test and deploy our        ``sunrise-calculator'' application.
+% \begin{rSubsection}{Continuous Integration/Delivery Pipeline}{Aug 2015 - Dec 2015}{DevOps practice}{} 
+\textbf{Continuous Integration/Delivery Pipeline:}~
+Basing on abstract syntax tree, created a regression test suite generator;
+integrated Ansible scripts, Docker and Jenkins to build and deploy our ``sunrise-calculator'' app.
 % \vspace{0.5em}~\\
 % \textbf{\it Skills: Continuous Deploy, Ansible, Jenkins, Dockers, Test suite prioritization}
-\end{rSubsection}
+% \end{rSubsection}
 
 \end{rSection} 
 
@@ -179,7 +188,7 @@ by Factorization Machine, SVM and ANN. Accelerated the learning process through 
 \end{rSection}
 
 \begin{flushright}
-{\scriptsize \textit{Updated: April 2018}}
+{\scriptsize \textit{Updated: August 3, 2018}}
 \end{flushright}
 
 \end{document}
