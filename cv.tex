@@ -21,8 +21,16 @@
 %----------------------------------------------------------------------------------------
  
 \documentclass{resume} % Use the custom resume.cls style 
-\usepackage[left=0.6in, top=0.65in, right=0.6in, bottom=0.2in]{geometry} % Document margins
+\usepackage[left=0.6in, top=0.65in, right=0.6in, bottom=0.65in]{geometry} % Document margins
 \usepackage{helvet}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{lastpage}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\rfoot{\scriptsize \textit{Page \thepage of \pageref{LastPage}. Last updated: May 24, 2019}}
+
 \renewcommand{\familydefault}{\sfdefault}
 \newenvironment{myitemize}
 { \begin{itemize}[leftmargin=0.2em,label={}]
@@ -40,7 +48,7 @@
 \name{Jianfeng Chen} % Your name 
 % \address{\url{http://jianfeng.us}}
 % \address{3111-A Walnut Creek Parkway, Raleigh, NC, 27606}
-\address{(919)-457-2034 \\ \url{http://jianfeng.us}   \\ \href{mailto:jchen37@ncsu.edu}{jchen37@ncsu.edu}
+\address{(919)-457-2034 \\ \url{https://jianfeng.us}   \\ \href{mailto:jchen37@ncsu.edu}{jchen37@ncsu.edu}~$\bullet$~\href{mailto:ginfungchan@gmail.com}{ginfungchan@gmail.com}
 }
 
 \begin{document}
@@ -59,7 +67,11 @@
 
 \begin{rSection}{Education}
 
-{\bf PhD in Computer Science} \hfill {Aug 2014 - May 2019 (expected)}\\ 
+{\bf PhD in Computer Science} \hfill {Aug 2014 - May 2019}\\ 
+North Carolina State University, GPA: 4.0/4.0  \\
+Dissertation: On the Value of Sampling and Pruning for Search-Based Software Engineering
+
+{\bf Master in Computer Science {\it (En route)}} \hfill {Aug 2014 - Dec 2018}\\ 
 North Carolina State University, GPA: 4.0/4.0  \\
 Coursework: Data-to-Knowledge $|$ DevOps $|$ Advanced AI $|$ Algorithm Analysis $|$ Data Mining $|$ Automated SE
 
@@ -94,6 +106,14 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 %-------------------------------------------------------------------------------
 
 \begin{rSection}{Intern and Research Experience}
+\begin{rSubsection}{Spike: Predicting Breakdowns in Cloud Services}{Sep 2018- Apr 2019}
+{Cooperation project with LexisNexis Legal \& Professional}{}
+\item Fetched cloud services monitoring data in microservices systems;
+\item Cleaned up the data and built machine learning models to predict the breakdowns 30 minutes ahead;
+\item Got a alarm system for service spikes with recalls and precision of 75\% and above.
+\end{rSubsection}
+
+
 \begin{rSubsection}{Cross-Stan: Embedding Bayesian Modeling in Python and C++ Programs}{May 2018- Aug 2018}
 {Internship at Facebook (Machine learning experience group)}{}
 \item Created the tool {\it CxStan} to embed Bayesian Modeling engine, Stan, into Python and C++ programs;
@@ -127,14 +147,13 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 % \textbf{\it Skills: Spark, Multi-objectives Optimization, Dimensionality Reduction, HAC}
 \end{rSubsection}  
 
+\newpage
 %-------------------------------------------------- 
-% \begin{rSubsection}{(Research Assistant) Sampling vs. Searching in Search-based SE}{Dec 2014 - Present}
-% {North Carolina State University}{}
-% \item Created a sampling technique to solve the software product line problem. Deployed the algorithm into platform LSF by MPI; implemented a job schedule engine. Reduced the experiment time from 2 months CPU hrs into 11.5 hrs.
-% \item Modeled the Linux Kernel modules in CNF sets. Created the decision tree surrogate model. By combining SAT solvers, found a way to configure large software systems 2000x faster. Published the results in TSE.
-% \vspace{0.5em}~\\
-% \textbf{\it Skills: MPI, SBSE, Software Architecture Analysis, Z3 Solver}
-% \end{rSubsection}
+\begin{rSubsection}{Sampling vs. Searching in Search-based SE}{Dec 2014 - Aug 2017}
+{North Carolina State University}{}
+\item Created a sampling technique to solve the software product line problem. Deployed the algorithm into platform LSF by MPI; implemented a job schedule engine. Reduced the experiment time from 2 months CPU hrs into 11.5 hrs.
+\item Modeled the Linux Kernel modules in CNF sets. Created the decision tree surrogate model. By combining SAT solvers, found a way to configure large software systems 2000x faster. Published the results in TSE.
+\end{rSubsection}
 
 
 
@@ -180,15 +199,17 @@ integrated Ansible scripts, Docker and Jenkins to build and deploy our ``sunrise
 \begin{rSection}{ Publications} 
 \setenumerate[1]{label=[\arabic*]}
 \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
-\item \underline{Chen, J.}, and Menzies, T. "RIOT: a Novel Stochastic Method for Rapidly Configuring Cloud-Based Workflows." \textit{IEEE International Conference on Cloud Computing 2018} (Accept rate: 15\%).
-\item \underline{Chen, J.}, Nair, V., Krishna, R., and Menzies, T. "Sampling as a Baseline Optimizer for Search-based Software Engineering" \textit{To appear. IEEE Transactions on Software Engineering (2018)}.
-\item \underline{Chen, J.}, Nair, V., and  Menzies, T. Beyond Evolutionary Algorithms for Search-based Software Engineering. \textit{Information and Software technology Volume 95, Mar 2018, p.281-294}.
+\item \underline{Jianfeng Chen} and Tim Menzies. "On the Benefits of Restrained Mutation: Faster Generation of Smaller Test Suites" Submitted to IEEE/ACM International Conference on Automated Software Engineering (ASE 2019).
+\item \underline{Jianfeng Chen}, Joymallya Chakraborty, Philip Clark, Kevin Haverlock, Snehit Cherian and Tim Menzies. "Predicting Breakdowns in Cloud Services (with SPIKE)". Submitted to Symposium on the Foundations of Software Engineering (ESEC/FSE 2019 - Industry Paper Track)
+\item \underline{Jianfeng Chen}, and Tim Menzies. "RIOT: A Stochastic-Based Method for Workflow Scheduling in the Cloud." 2018 IEEE 11th International Conference on Cloud Computing (CLOUD). IEEE, 2018. (Accept rate: 15\%).
+\item \underline{Jianfeng Chen}, Vivek Nair, Rahul Krishna, and Tim Menzies. "Sampling as a Baseline Optimizer for Search-based Software Engineering." IEEE Transactions on Software Engineering (2018).
+\item \underline{Jianfeng Chen}, Vivek Nair, and Tim Menzies. "Beyond evolutionary algorithms for search-based software engineering." Information and Software Technology (2017).
+
+\item Junjie Wang, Song Wang, \underline{Jianfeng Chen}, Tim Menzies, Qiang Cui, Miao Xie and  Qing Wang. "Characterizing Crowds to Better Optimize Worker Recommendation in Crowdsourced Testing.". IEEE Transactions on Software Engineering(2019).
+\item Vivek Nair, Amrit Agrawal, \underline{Jianfeng Chen}, Wei Fu, George Mathew, Tim Menzies, Leandro Minku, Markus Wagner, and Zhe Yu. "Data-Driven Search-based Software Engineering." The Mining Software Repositories (MSR) 2018.
+\item Tianpei Xia, Rahul Krishna, \underline{Jianfeng Chen}, George Mathew, Xipeng Shen, and Tim Menzies. "Hyperparameter optimization for effort estimation." Submitted Empirical Software Engineering (EMSE) 2018
+\item Vivek Nair, Tim Menzies, and \underline{Jianfeng Chen}. "An (accidental) exploration of alternatives to evolutionary algorithms for SBSE." In International Symposium on Search Based Software Engineering, pp. 96-111. Springer, Cham, 2016.
 \end{enumerate}
-
 \end{rSection}
-
-\begin{flushright}
-{\scriptsize \textit{Updated: August 3, 2018}}
-\end{flushright}
 
 \end{document}

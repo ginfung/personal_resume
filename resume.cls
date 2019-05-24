@@ -106,7 +106,7 @@
   \item[]
 }{
   \end{list}
-  \vspace{0em} % reduce the gap between sections
+  \vspace{0.5em} % reduce the gap between sections
 }
 
 %----------------------------------------------------------------------------------------
