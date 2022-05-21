@@ -29,7 +29,7 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead{}
-\rfoot{\scriptsize \textit{Page \thepage of \pageref{LastPage}. Last updated: June 10, 2019}}
+\rfoot{\scriptsize \textit{Page \thepage ~of~ \pageref{LastPage}. Last updated: May 20, 2022}}
 
 \renewcommand{\familydefault}{\sfdefault}
 \newenvironment{myitemize}
@@ -45,11 +45,13 @@
 \usepackage{enumitem,kantlipsum}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Jianfeng Chen} % Your name 
+\name{Jianfeng Chen} 
 % \address{\url{http://jianfeng.us}}
 % \address{3111-A Walnut Creek Parkway, Raleigh, NC, 27606}
-\address{(919)-457-2034 \\ \url{https://jianfeng.us}   \\ \href{mailto:jchen37@ncsu.edu}{jchen37@ncsu.edu}~$\bullet$~\href{mailto:ginfungchan@gmail.com}{ginfungchan@gmail.com}
+\address{(919)-457-2034 \\ \url{https://jianfeng.us}   \\ \href{mailto:jchen37@alumni.ncsu.edu}{jchen37@alumni.ncsu.edu}
+% ~$\bullet$~\href{mailto:ginfungchan@gmail.com}{ginfungchan@gmail.com
 }
+% }
 
 \begin{document}
 %----------------------------------------------------------------------------------------
@@ -61,9 +63,22 @@
 % \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%	WORK EXPERIENCES SECTION
 %----------------------------------------------------------------------------------------
 \vspace{2em}
+\begin{rSection}{Work Experience}
+\begin{rSubsection}{Research Scientist in Meta}{Jul 2019 - Present}{Meta Core App Data Framework}{}
+\item Optimized the GraphQL compiler and building infra for mobile Apps; p50 built time for GraphQL modules in Facebook app reduced from 38 minutes to 17 seconds;
+\item Led and created GraphQL developing tool-chains; provided real-time validation tools to mobile developers;
+\item Worked and promoted the fragment variable as a new feature to the GraphQL open source specifications;
+\item \href{https://www.droidcon.com/2021/11/23/integrating-custom-language-with-android-studio-graphql-case-study/}{Invited talk (Droidcon 2021)}: ``Integrating custom language with android studio: GraphQL case study''.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 
@@ -87,13 +102,13 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 
 \begin{rSection}{Skills and Interests}
 \begin{myitemize}\setlength\itemsep{0.1em}
-    \item \textbf{Language}: Python, C\texttt{++}, Java, JavaScript, Matlab and SQL;
+    \item \textbf{Language}: Rust, Python, C\texttt{++}, Java, JavaScript, Matlab and SQL;
     \item \textbf{Data analysis tools}: Scikit-learn, SciPy, Pandas, jMetal, Gephi;
     \item \textbf{DevOps tools}: Jenkins, Ansible, Travis-CI, AWS Elasticsearch, S3, Docker, Redis.
     % \item Interested in machine learning/data related positions as well as backend development and (automated) testing.
 \end{myitemize}
 
-% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+% \begin{tabular}{ @{} >{\textbfseries}l @{\hspace{6ex}} l }  
 % Languages & \textbf{\textit{Proficient:}} Python $|$ Java $|$ \LaTeX; \textbf{\textit{Familiar with:}} JavaScript $|$ MatLab $|$ SQL $|$ C\texttt{++}\\
 % Data Analytics & Scikit-learn, SciPy, Pandas, jMetal, Gephi, MPI\\
 % DevOps Tools & Git, Jenkins, Ansible, Travis-CI, AWS Elasticsearch, S3, Docker, Redis \\
@@ -110,7 +125,7 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 {Cooperation project with LexisNexis Legal \& Professional}{}
 \item Fetched cloud services monitoring data in microservices systems;
 \item Cleaned up the data and built machine learning models to predict the breakdowns 30 minutes ahead;
-\item Got a alarm system for service spikes with recalls and precision of 75\% and above;
+\item Got a alarm system for service spikes with recalls and precision of 75\% or above;
 \item Published results on Symposium on the Foundations of Software Engineering 2019 (Industrial track).
 \end{rSubsection}
 
@@ -133,7 +148,7 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 
 \begin{rSubsection}{LACE Data Privatization Tools and its Application}{Aug 2016 - Nov 2016}{NSA funded project in \href{http://ai4se.net/index}{\textit{RAISE}} Lab}{}
 
-\item Distributed a data anonymization  package in Python (see \url{http://tiny.cc/pydp}); tested package via Travis-CI;
+\item Distributed a data anonymization  package in Python (see \url{https://lace.readthedocs.io/}); tested package via Travis-CI;
 \item Applied my package to education and medical data sets. Evaluate data set utility through supervised learning.
 % \vspace{0.5em}~\\
 % \textbf{\it Skills: Python, DevOps(Continuous Deployment), Data Deduplication, Data Cleaning}
@@ -148,7 +163,6 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 % \textbf{\it Skills: Spark, Multi-objectives Optimization, Dimensionality Reduction, HAC}
 \end{rSubsection}  
 
-\newpage
 %-------------------------------------------------- 
 \begin{rSubsection}{Sampling vs. Searching in Search-based SE}{Dec 2014 - Aug 2017}
 {North Carolina State University}{}
@@ -166,34 +180,34 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 %	PROJECTS
 %-------------------------------------------------------------------------------
 
-\begin{rSection}{Selected Coursework Projects}
+% \begin{rSection}{Selected Coursework Projects}
 
-
-%------------------------------------------------
-
-\begin{rSubsection}{Building Movie Recommendation System}{Aug 2015 - Dec 2015}{``Netflix Prize'' completion extension}{} 
-% \textbf{Building Movie Recommendation System:}
-\item Built a movies recommendation system by training from 100 million
-% \href{http://www.netflixprize.com/}{\texttt{Netflix ratings}} 
-Netflix ratings
-by Factorization Machine, SVM and ANN. Accelerated the learning process with HPC server.
-\item Crawled cast, critic reviews from rotten tomatoes and classified the movies basing on Jaro-Winkler Distance. Reduced the RMSE by up to 9\% with the help of external information.
-% \vspace{0.5em}~\\
-% \textbf{\it Skills: Scikit-learn, HPC, MPI, libFM}
-\end{rSubsection}
 
 % %------------------------------------------------
 
-\begin{rSubsection}{Continuous Integration/Delivery Pipeline}{Aug 2015 - Dec 2015}{DevOps practice}{} 
-% \textbf{Continuous Integration/Delivery Pipeline:}
-\item Basing on abstract syntax tree, created a regression test suite generator;
-\item Integrated Ansible scripts, Docker and Jenkins to build and deploy our ``sunrise-calculator'' app;
-\item Details at \url{http://tiny.cc/jc_devops}.
-% \vspace{0.5em}~\\
-% \textbf{\it Skills: Continuous Deploy, Ansible, Jenkins, Dockers, Test suite prioritization}
-\end{rSubsection}
+% \begin{rSubsection}{Building Movie Recommendation System}{Aug 2015 - Dec 2015}{``Netflix Prize'' completion extension}{} 
+% % \textbf{Building Movie Recommendation System:}
+% \item Built a movies recommendation system by training from 100 million
+% % \href{http://www.netflixprize.com/}{\texttt{Netflix ratings}} 
+% Netflix ratings
+% by Factorization Machine, SVM and ANN. Accelerated the learning process with HPC server.
+% \item Crawled cast, critic reviews from rotten tomatoes and classified the movies basing on Jaro-Winkler Distance. Reduced the RMSE by up to 9\% with the help of external information.
+% % \vspace{0.5em}~\\
+% % \textbf{\it Skills: Scikit-learn, HPC, MPI, libFM}
+% \end{rSubsection}
 
-\end{rSection} 
+% %------------------------------------------------
+
+% \begin{rSubsection}{Continuous Integration/Delivery Pipeline}{Aug 2015 - Dec 2015}{DevOps practice}{} 
+% % \textbf{Continuous Integration/Delivery Pipeline:}
+% \item Basing on abstract syntax tree, created a regression test suite generator;
+% \item Integrated Ansible scripts, Docker and Jenkins to build and deploy our ``sunrise-calculator'' app;
+% \item Details at \url{http://tiny.cc/jc_devops}.
+% % \vspace{0.5em}~\\
+% % \textbf{\it Skills: Continuous Deploy, Ansible, Jenkins, Dockers, Test suite prioritization}
+% \end{rSubsection}
+
+% \end{rSection} 
 
 %--------------------------------------------------------------------------------------
 %   Research Publications 
@@ -201,16 +215,23 @@ by Factorization Machine, SVM and ANN. Accelerated the learning process with HPC
 \begin{rSection}{ Publications} 
 \setenumerate[1]{label=[\arabic*]}
 \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
-\item \underline{Jianfeng Chen} and Tim Menzies. "On the Benefits of Restrained Mutation: Faster Generation of Smaller Test Suites" Submitted to IEEE/ACM International Conference on Automated Software Engineering (ASE 2019).
-\item \underline{Jianfeng Chen}, Joymallya Chakraborty, Philip Clark, Kevin Haverlock, Snehit Cherian and Tim Menzies. "Predicting Breakdowns in Cloud Services (with SPIKE)". Symposium on the Foundations of Software Engineering (ESEC/FSE 2019 - Industry Paper Track)
-\item \underline{Jianfeng Chen}, and Tim Menzies. "RIOT: A Stochastic-Based Method for Workflow Scheduling in the Cloud." 2018 IEEE 11th International Conference on Cloud Computing (CLOUD). IEEE, 2018. (Accept rate: 15\%).
-\item \underline{Jianfeng Chen}, Vivek Nair, Rahul Krishna, and Tim Menzies. "Sampling as a Baseline Optimizer for Search-based Software Engineering." IEEE Transactions on Software Engineering (2018).
-\item \underline{Jianfeng Chen}, Vivek Nair, and Tim Menzies. "Beyond evolutionary algorithms for search-based software engineering." Information and Software Technology (2017).
+\item Xueqi Yang, \textbf{Jianfeng Chen}, Rahul Yedida, Zhe Yu, and Tim Menzies. ``Learning to recognize actionable static code warnings (is intrinsically easy).'' Empirical Software Engineering (2021)
 
-\item Junjie Wang, Song Wang, \underline{Jianfeng Chen}, Tim Menzies, Qiang Cui, Miao Xie and  Qing Wang. "Characterizing Crowds to Better Optimize Worker Recommendation in Crowdsourced Testing.". IEEE Transactions on Software Engineering(2019).
-\item Vivek Nair, Amrit Agrawal, \underline{Jianfeng Chen}, Wei Fu, George Mathew, Tim Menzies, Leandro Minku, Markus Wagner, and Zhe Yu. "Data-Driven Search-based Software Engineering." The Mining Software Repositories (MSR) 2018.
-\item Tianpei Xia, Rahul Krishna, \underline{Jianfeng Chen}, George Mathew, Xipeng Shen, and Tim Menzies. "Hyperparameter optimization for effort estimation." Submitted Empirical Software Engineering (EMSE) 2018
-\item Vivek Nair, Tim Menzies, and \underline{Jianfeng Chen}. "An (accidental) exploration of alternatives to evolutionary algorithms for SBSE." In International Symposium on Search Based Software Engineering, pp. 96-111. Springer, Cham, 2016.
+\item Shu Rui, Tianpei Xia, \textbf{Jianfeng Chen}, Laurie Williams, and Tim Menzies. ``How to better distinguish security bug reports (using dual hyperparameter optimization).'' Empirical Software Engineering (2021)
+
+% \item \textbf{Jianfeng Chen} and Tim Menzies. ``On the Benefits of Restrained Mutation: Faster Generation of Smaller Test Suites'' Submitted to IEEE/ACM International Conference on Automated Software Engineering (ASE 2019).
+\item \textbf{Jianfeng Chen}, Joymallya Chakraborty, Philip Clark, Kevin Haverlock, Snehit Cherian and Tim Menzies. ``Predicting Breakdowns in Cloud Services (with SPIKE)''. Symposium on the Foundations of Software Engineering (ESEC/FSE 2019 - Industry Paper Track)
+\item Junjie Wang, Song Wang, \textbf{Jianfeng Chen}, Tim Menzies, Qiang Cui, Miao Xie and  Qing Wang. ``Characterizing Crowds to Better Optimize Worker Recommendation in Crowdsourced Testing.''. IEEE Transactions on Software Engineering(2019).
+\item \textbf{Jianfeng Chen}, and Tim Menzies. ``RIOT: A Stochastic-Based Method for Workflow Scheduling in the Cloud.'' 2018 IEEE 11th International Conference on Cloud Computing (CLOUD). IEEE, 2018. (Accept rate: 15\%).
+\item Vivek Nair, Amrit Agrawal, \textbf{Jianfeng Chen}, Wei Fu, George Mathew, Tim Menzies, Leandro Minku, Markus Wagner, and Zhe Yu. ``Data-Driven Search-based Software Engineering.'' The Mining Software Repositories (MSR) 2018.
+
+\item \textbf{Jianfeng Chen}, Vivek Nair, Rahul Krishna, and Tim Menzies. ``Sampling as a Baseline Optimizer for Search-based Software Engineering.'' IEEE Transactions on Software Engineering (2018).
+\item \textbf{Jianfeng Chen}, Vivek Nair, and Tim Menzies. ``Beyond evolutionary algorithms for search-based software engineering.'' Information and Software Technology (2017).
+
+% \item Tianpei Xia, Rahul Krishna, \textbf{Jianfeng Chen}, George Mathew, Xipeng Shen, and Tim Menzies. ``Hyperparameter optimization for effort estimation.'' Submitted Empirical Software Engineering (EMSE) 2018
+\item Vivek Nair, Tim Menzies, and \textbf{Jianfeng Chen}. ``An (accidental) exploration of alternatives to evolutionary algorithms for SBSE.'' In International Symposium on Search Based Software Engineering, pp. 96-111. Springer, Cham, 2016.
+\item Yijun Yang, Wei Zeng, and \textbf{Jianfeng Chen}. ``Equiareal parameterizations of NURBS surfaces''. Graphical models 76.1 (2014)
+
 \end{enumerate}
 \end{rSection}
 
