@@ -29,7 +29,7 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead{}
-\rfoot{\scriptsize \textit{Page \thepage ~of~ \pageref{LastPage}. Last updated: May 20, 2022}}
+\rfoot{\scriptsize \textit{Page \thepage ~of~ \pageref{LastPage}. Last updated: Nov 21, 2023}}
 
 \renewcommand{\familydefault}{\sfdefault}
 \newenvironment{myitemize}
@@ -47,7 +47,7 @@
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Jianfeng Chen} 
 % \address{\url{http://jianfeng.us}}
-% \address{3111-A Walnut Creek Parkway, Raleigh, NC, 27606}
+% \address{Some_ADDRESS_NYC_10001}
 \address{(919)-457-2034 \\ \url{https://jianfeng.us}   \\ \href{mailto:jchen37@alumni.ncsu.edu}{jchen37@alumni.ncsu.edu}
 % ~$\bullet$~\href{mailto:ginfungchan@gmail.com}{ginfungchan@gmail.com
 }
@@ -65,15 +65,27 @@
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCES SECTION
 %----------------------------------------------------------------------------------------
-\vspace{2em}
+% \vspace{2em}
 \begin{rSection}{Work Experience}
-\begin{rSubsection}{Meta Platforms (Facebook) $|$ Research Scientist}{Jul 2019 - Present}{Meta Core App Data Framework}{}
-\item Major contributor to \textit{(Rust supported)} query and model compilation for client-side GraphQL in Meta family of apps, including Facebook/Instagram/Oculus {\it etc.};
-\item Prototyped and optimized the GraphQL compiler and builder for mobile Apps. Medium(p50) built time for GraphQL modules in Facebook app reduced from 38 minutes to 17 seconds;
-\item Led and created GraphQL developing tool-chains, provided real-time validation tools to mobile developers;
-\item Worked and promoted the fragment variable as a new feature to the GraphQL open source specifications;
-\item \href{https://www.droidcon.com/2021/11/23/integrating-custom-language-with-android-studio-graphql-case-study/}{Invited talk (Droidcon 2021)}: ``Integrating custom language with android studio: GraphQL case study''.
-\item Mentored 3 intern projects and onboarded one mid/senior-level engineer.
+\begin{rSubsection}{Meta Platforms \textit{(formerly Facebook)} $|$ Research Scientist}{Jul 2019 - Present}{Family of Apps Data Framework (GraphQL)}{}
+\textbf{Language Compiler}
+\item Major contributor to revamp OSS GraphQL Compiler \textbf{using Rust}, tailored for client-side GraphQL implementation across various Meta family apps such as Facebook, Instagram, Oculus, WhatsApp, Horizon, and others;
+\item Spearheaded the prototyping and optimization of the GraphQL compiling process; notably slashed the build time for GraphQL modules within the Facebook app from 38 mins to 17 secs, \textbf{99\% reduction};
+\item Worked and promoted the fragment variable as a new feature to the GraphQL open source specifications.
+
+\textbf{Automated SE tools}
+\item Led the development of GraphQL toolchains, delivering real-time query and schema validation tools;
+\item Major contributor to GraphQL \textbf{IDE plugins} like VS Code and Android Studio in Meta;
+\item Conducted static code analysis (\textbf{code indexing}) for Java and ObjC to identify unreachable modules, resulting in the removal of redundant fields in the product; this effort contributed to saving \textbf{over \$10 million} in power usage;
+\item Orchestrated \textbf{Cloud Based CI/CD} Platform for mobile developers.
+
+\textbf{Mentoring and Invited Talks}
+\item Provided mentorship to three interns and facilitated the onboarding process for two mid/senior-level engineers;
+\item \href{https://www.droidcon.com/2021/11/23/integrating-custom-language-with-android-studio-graphql-case-study/}{Invited talk (Droidcon 2021)}: \textit{Integrating custom language with android studio: GraphQL case study};
+\item \href{https://cdcon2022.sched.com/}{Invited talk (cdCon 2022)}: \textit{GraphQL Dev Supporting Tools in Meta}.
+
+
+
 \end{rSubsection}
 
 \end{rSection}
@@ -86,16 +98,16 @@
 
 {\bf PhD in Computer Science} \hfill {Aug 2014 - May 2019}\\ 
 North Carolina State University, GPA: 4.0/4.0  \\
-Advisor: Dr. Tim Menzies (IEEE Fellow) \\
+Advisor: Dr. Tim Menzies (IEEE Fellow, \href{https://ase-conferences.org/ase-fellows.html}{ASE Fellow}) \\
 Dissertation: On the Value of Sampling and Pruning for Search-Based Software Engineering
 
 {\bf Master in Computer Science {\it (En route)}} \hfill {Aug 2014 - Dec 2018}\\ 
 North Carolina State University, GPA: 4.0/4.0  \\
-Coursework: Data-to-Knowledge $|$ DevOps $|$ Advanced AI $|$ Algorithm Analysis $|$ Data Mining $|$ Automated SE
+Coursework: Automated SE $|$ DevOps $|$ Advanced AI $|$ Algorithm Analysis $|$ Data Mining $|$ Data-to-Knowledge
 
 {\bf BS in Computer Science} \hfill {Sep 2010 - May 2014}\\ 
 Shandong University, China, GPA: 89.93/100  \\
-Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numerical Analysis $|$ Image Processing
+Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numerical Analysis $|$ Compilers
 
 \end{rSection} 
 
@@ -151,7 +163,9 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 
 \begin{rSubsection}{LACE Data Privatization Tools and its Application}{Aug 2016 - Nov 2016}{NSA funded project in \href{http://ai4se.net/index}{\textit{RAISE}} Lab}{}
 
-\item Distributed a data anonymization  package in Python (see \url{https://lace.readthedocs.io/}); tested package via Travis-CI;
+\item Distributed a data anonymization  package in Python
+% (see \url{https://lace.readthedocs.io/})
+, tested package via Travis-CI;
 \item Applied my package to education and medical data sets. Evaluate data set utility through supervised learning.
 % \vspace{0.5em}~\\
 % \textbf{\it Skills: Python, DevOps(Continuous Deployment), Data Deduplication, Data Cleaning}
@@ -174,10 +188,7 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 \end{rSubsection}
 
 
-
 \end{rSection}
-
-
 
 %-------------------------------------------------------------------------------
 %	PROJECTS
@@ -223,7 +234,7 @@ Coursework: Data Structure $|$ OS $|$ Networking $|$ Database System $|$ Numeric
 \item Shu Rui, Tianpei Xia, \textbf{Jianfeng Chen}, Laurie Williams, and Tim Menzies. ``How to better distinguish security bug reports (using dual hyperparameter optimization).'' Empirical Software Engineering (2021)
 
 % \item \textbf{Jianfeng Chen} and Tim Menzies. ``On the Benefits of Restrained Mutation: Faster Generation of Smaller Test Suites'' Submitted to IEEE/ACM International Conference on Automated Software Engineering (ASE 2019).
-\item \textbf{Jianfeng Chen}, Joymallya Chakraborty, Philip Clark, Kevin Haverlock, Snehit Cherian and Tim Menzies. ``Predicting Breakdowns in Cloud Services (with SPIKE)''. Symposium on the Foundations of Software Engineering (ESEC/FSE 2019 - Industry Paper Track)
+\item \textbf{Jianfeng Chen}, Joymallya Chakraborty, Philip Clark, Kevin Haverlock, Snehit Cherian and Tim Menzies. ``Predicting Breakdowns in Cloud Services (with SPIKE)''. Symposium on the Foundations of Software Engineering (ESEC/FSE 2019)
 \item Junjie Wang, Song Wang, \textbf{Jianfeng Chen}, Tim Menzies, Qiang Cui, Miao Xie and  Qing Wang. ``Characterizing Crowds to Better Optimize Worker Recommendation in Crowdsourced Testing.''. IEEE Transactions on Software Engineering(2019).
 \item \textbf{Jianfeng Chen}, and Tim Menzies. ``RIOT: A Stochastic-Based Method for Workflow Scheduling in the Cloud.'' 2018 IEEE 11th International Conference on Cloud Computing (CLOUD). IEEE, 2018. (Accept rate: 15\%).
 \item Vivek Nair, Amrit Agrawal, \textbf{Jianfeng Chen}, Wei Fu, George Mathew, Tim Menzies, Leandro Minku, Markus Wagner, and Zhe Yu. ``Data-Driven Search-based Software Engineering.'' The Mining Software Repositories (MSR) 2018.
